@@ -101,7 +101,7 @@
 <div class="update-card">
     <h2>Update Student Details</h2>
     
-    <form th:action="@{/do_update/{id}(id=${student.id})}" th:object="${student}" method="post">
+    <form th:action="@{/update/{id}(id=${student.id})}" th:object="${student}" method="post">
         
         <input type="hidden" th:field="*{id}" />
 
